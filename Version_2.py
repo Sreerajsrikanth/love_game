@@ -25,7 +25,7 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 def verify_audio_file():
-    audio_path = os.path.abspath("Assets/background_music.mp3")
+    audio_path = os.path.abspath("background_music.mp3")
     if os.path.exists(audio_path):
         file_size = os.path.getsize(audio_path)
         mime_type, _ = mimetypes.guess_type(audio_path)
@@ -55,7 +55,7 @@ def display_image(image_path):
 st.set_page_config(page_title="Endgame Countdown", layout="wide")
 
 # Set background image
-set_png_as_page_bg('assets/images/taylor_swift_bg.jpeg')
+set_png_as_page_bg('taylor_swift_bg.jpeg')
 
 # Verify and load audio file
 audio_bytes = verify_audio_file()
@@ -170,11 +170,11 @@ if 'game_active' not in st.session_state:
         "The day I knew I wanted you for life"
     ]
     st.session_state.images = [
-        "assets/images/image1.jpg",
-        "assets/images/image2.jpeg",
-        "assets/images/image3.jpeg",
-        "assets/images/image4.jpeg",
-        "assets/images/image5.jpg"
+        "image1.jpg",
+        "image2.jpeg",
+        "image3.jpeg",
+        "image4.jpeg",
+        "image5.jpg"
     ]
     st.session_state.selected_words = []
     st.session_state.scrambled_words = []
