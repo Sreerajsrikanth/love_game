@@ -170,11 +170,11 @@ if 'game_active' not in st.session_state:
         "The day I knew I wanted you for life"
     ]
     st.session_state.images = [
-        "image1.jpg",
+        "image1.JPG",
         "image2.jpeg",
         "image3.jpeg",
         "image4.jpeg",
-        "image5.jpg"
+        "image5.JPG"
     ]
     st.session_state.selected_words = []
     st.session_state.scrambled_words = []
